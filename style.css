@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--red-color: hsl(0, 100%, 74%);
+	--green-color: hsl(154, 59%, 51%);
+	--blue-color: hsl(248, 32%, 49%);
+	--dark-blue-color: hsl(249, 10%, 26%);
+	--grayish-blue-color: hsl(246, 25%, 77%);
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	background-image: url(./images/bg-intro-desktop.png);
+	background-color: var(--red-color);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+main {
+	width: 70%;
+	height: 100%;
+	margin: 90px auto;
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.title-section {
+	width: 50%;
+	color: #fff;
+}
+
+.title-section br {
+	display: none;
+}
+
+.title-section h1 {
+	font-size: 37px;
+	margin-bottom: 20px;
+	line-height: 1.4;
+}
+
+.title-section p {
+	font-size: 14px;
+	line-height: 25px;
+	opacity: 80%;
+}
+
+.form-section {
+	width: 50%;
+}
+
+.offers {
+	background-color: var(--blue-color);
+	font-size: 14px;
+	text-align: center;
+	padding: 15px 10px;
+	color: var(--grayish-blue-color);
+	margin-bottom: 20px;
+	border-radius: 8px;
+	line-height: 1.7;
+	box-shadow: 0px 8px 0px hsla(220, 15%, 55%, 40%);
+}
+
+.offers span {
+	color: #fff;
+}
+
+.offers br {
+	display: none;
+}
+
+.form-section form {
+	background-color: #fff;
+	padding: 30px 0;
+	border-radius: 10px;
+	box-shadow: 0px 9px 0px hsla(0, 100%, 0%, 20%);
+}
+
+form input {
+	display: block;
+	width: 80%;
+	margin: 0 auto 13px;
+	padding: 13px;
+	border-radius: 3px;
+	border: 1px solid var(--grayish-blue-color);
+}
+
+.btn {
+	text-align: center;
+	text-transform: uppercase;
+	background-color: var(--green-color);
+	border: none;
+	color: #fff;
+	padding: 13px 0;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 12px;
+	box-shadow: 0px 4px 0px hsla(154, 59%, 51%, 70%);
+}
+
+.btn:hover {
+	opacity: 80%;
+	transition: 0.5s;
+}
+
+form p {
+	text-align: center;
+	color: var(--grayish-blue-color);
+	font-size: 11px;
+	width: 70%;
+	margin: auto;
+}
+
+form p a {
+	color: var(--red-color);
+	text-decoration: none;
+}
+
+@media(max-width: 900px) {
+	main {
+		width: 85%;
+	}
+	.title-section h1 {
+		font-size: 32px;
+	}
+}
+
+@media(max-width: 750px) {
+	main {
+		flex-direction: column;
+		width: 70%;
+		gap: 60px;
+	}
+	.title-section {
+		width: 100%;
+		text-align: center;
+	}
+	.title-section br {
+		display: block;
+	}
+	.title-section h1 {
+		font-size: 27px;
+	}
+	.form-section {
+		width: 100%;
+	}
+	.offers br {
+		display: block;
+	}
+}
+
+@media(max-width: 500px) {
+	main {
+		width: 90%;
+	}
+	body {
+		background-image: url(./images/bg-intro-mobile.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+}
